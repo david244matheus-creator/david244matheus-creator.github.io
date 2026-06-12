@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coleção DNKStore 2026</title>
+
+<style>
+:root{
+  --roxo:#3b1c5a;
+  --dourado:#d4af37;
+  --preto:#0e0e0e;
+  --branco:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:var(--preto);
+  color:var(--branco);
+}
+
+/* CAPA */
+.capa{
+  min-height:100vh;
+  background:linear-gradient(180deg, var(--roxo), #1a0828);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.capa img{
+  max-width:220px;
+  margin-bottom:20px;
+}
+
+.capa h1{
+  font-size:2.2em;
+  color:var(--dourado);
+  margin-bottom:10px;
+}
+
+.capa p{
+  font-size:1.1em;
+  opacity:0.9;
+}
+
+/* SEÇÕES */
+section{
+  padding:50px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  color:var(--dourado);
+  margin-bottom:20px;
+  border-bottom:2px solid var(--dourado);
+  padding-bottom:8px;
+}
+
+/* SUMÁRIO */
+.sumario ul{
+  list-style:none;
+}
+
+.sumario li{
+  padding:10px 0;
+  border-bottom:1px solid #333;
+}
+
+/* GRID PRODUTOS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+  gap:15px;
+}
+
+.card{
+  background:#1a1a1a;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  display:block;
+}
+
+.card p{
+  padding:10px;
+  font-size:0.9em;
+  text-align:center;
+}
+
+/* TABELA */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+th, td{
+  border:1px solid #444;
+  padding:10px;
+  text-align:center;
+}
+
+th{
+  background:var(--roxo);
+  color:var(--dourado);
+}
+
+/* COMPRA */
+.compra{
+  background:linear-gradient(180deg, #1a0828, var(--roxo));
+  text-align:center;
+}
+
+.compra p{
+  margin:10px 0;
+}
+
+.botao{
+  display:inline-block;
+  margin-top:15px;
+  padding:15px 25px;
+  background:var(--dourado);
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- CAPA -->
+<div class="capa">
+  <!-- SUBSTITUA o src pela URL da sua logo se quiser -->
+  <img src="https://i.imgur.com/placeholder.png" alt="DNKStore">
+  <h1>Coleção DNKStore 2026</h1>
+  <p>Catálogo oficial · Jerseys Premium · Envio para todo o Brasil</p>
+</div>
+
+<!-- SUMÁRIO -->
+<section class="sumario">
+<h2>📑 Sumário</h2>
+<ul>
+<li>🌍 Copa do Mundo FIFA 2026</li>
+<li>🏴 Premier League</li>
+<li>🇵🇹 Liga Portuguesa</li>
+<li>🇧🇷 Brasileirão</li>
+<li>🇪🇸 La Liga</li>
+<li>🇩🇪 Bundesliga</li>
+<li>🇮🇹 Serie A</li>
+<li>🏈 NFL</li>
+<li>🏀 NBA</li>
+<li>👕 Conjuntos de Treino</li>
+<li>🧒 Infantil & Baby</li>
+<li>🔙 Linha Retrô</li>
+</ul>
+</section>
+
+<!-- EXEMPLO DE CATEGORIA -->
+<section>
+<h2>🌍 Copa do Mundo FIFA 2026</h2>
+<div class="grid">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x300?text=Seleção+1">
+    <p>Código: WC01</p>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x300?text=Seleção+2">
+    <p>Código: WC02</p>
+  </div>
+</div>
+</section>
+
+<!-- TABELA DE TAMANHOS -->
+<section>
+<h2>📏 Tabela de Tamanhos</h2>
+<table>
+<tr>
+<th>Categoria</th>
+<th>Tamanhos</th>
+</tr>
+<tr>
+<td>Adulto</td>
+<td>S · M · L · XL · XXL · 3XL · 4XL</td>
+</tr>
+<tr>
+<td>Feminino</td>
+<td>P · M · G · GG</td>
+</tr>
+<tr>
+<td>Infantil</td>
+<td>2 · 4 · 6 · 8 · 10 · 12 · 14</td>
+</tr>
+<tr>
+<td>Baby</td>
+<td>0–3M · 3–6M · 6–9M</td>
+</tr>
+<tr>
+<td>NFL / NBA</td>
+<td>S · M · L · XL · XXL</td>
+</tr>
+</table>
+</section>
+
+<!-- COMPRA -->
+<section class="compra">
+<h2>🛒 Como Comprar</h2>
+<p>1️⃣ Escolha o produto e o código</p>
+<p>2️⃣ Chame no WhatsApp</p>
+<p>3️⃣ Pagamento via PIX</p>
+<p>4️⃣ Envio para todo o Brasil</p>
+
+<a class="botao" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
+Comprar pelo WhatsApp
+</a>
+</section>
+
+</body>
+</html>
